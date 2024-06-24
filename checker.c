@@ -20,7 +20,7 @@ int batteryIsOk(float temperature, float soc, float chargeRate) {
   if(temperature < 0 || temperature > 45) {
     CheckTemperature();
   } else if(soc < 20 || soc > 80) {
-    CheckStateOfCharge()
+    CheckStateOfCharge();
   } else if(chargeRate > 0.8) {
     CheckChargeRate();
   }
