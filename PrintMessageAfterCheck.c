@@ -1,4 +1,4 @@
-#inlcude <stdio.h>
+#include <stdio.h>
 #include "Battery_main.h"
 
 void PrintMessage(int message_index, enum ParameterType parameter_type) {
