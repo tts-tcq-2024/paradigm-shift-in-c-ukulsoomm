@@ -1,5 +1,5 @@
-#ifndef BMS_MAIN_H
-#define BMS_MAIN_H
+#ifndef BATTERY_MAIN_H
+#define BATTERY_MAIN_H
 
 enum ParameterType {
     TEMPERATURE,
@@ -23,4 +23,4 @@ int ParameterCheck(float value, float min_value, float max_value, float toleranc
 int BatteryIsOk(float temperature, float soc, float charge_rate);
 void test_battery(float temperature, float soc, float charge_rate, int language);
 
-#endif // BMS_MAIN_H
+#endif // BATTERY_MAIN_H
