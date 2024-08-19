@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "BMS_main.h"
+#include "Battery_main.h"
 
 void test_Battery(float temperature, float soc, float charge_rate, int language) {
     Set_Language(language);
