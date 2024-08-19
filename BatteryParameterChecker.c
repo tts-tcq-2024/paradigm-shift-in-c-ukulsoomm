@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include "BatteryParameterChecker.h"
+
 static int Check_OutOfRange(float value, float min_value, float max_value, enum ParameterType parameter_type) {
     if (is_value_out_of_range(value, min_value, max_value)) {
         print_message(0, parameter_type);
