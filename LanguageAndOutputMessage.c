@@ -2,7 +2,7 @@ void Set_Language(int language) {
     Current_Language = language;
 }
 
-int current_language = ENGLISH;
+int Current_Language = ENGLISH;
 
 const char* messages[][3][3] = {
     // Output messages in English
