@@ -2,7 +2,7 @@
 #include "BatteryParameterChecker.h"
 
 static int Check_OutOfRange(float value, float min_value, float max_value, enum ParameterType parameter_type) {
-    if (is_value_out_of_range(value, min_value, max_value)) {
+    if (is_OutOfRange(value, min_value, max_value)) {
         print_message(0, parameter_type);
         return 1;
     }
@@ -10,13 +10,13 @@ static int Check_OutOfRange(float value, float min_value, float max_value, enum 
 }
 
 static void Check_LowerLimit(float value, float min_value, float tolerance, enum ParameterType parameter_type) {
-    if (is_value_near_lower_limit(value, min_value, tolerance)) {
+    if (is_NearLowerLimit(value, min_value, tolerance)) {
         print_message(1, parameter_type);
     }
 }
 
 static void Check_UpperLimit(float value, float max_value, float tolerance, enum ParameterType parameter_type) {
-    if (is_value_near_upper_limit(value, max_value, tolerance)) {
+    if (is_NearUpperLimit(value, max_value, tolerance)) {
         print_message(2, parameter_type);
     }
 }
