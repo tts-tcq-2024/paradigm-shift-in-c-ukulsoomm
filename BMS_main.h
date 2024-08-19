@@ -23,4 +23,4 @@ int ParameterCheck(float value, float min_value, float max_value, float toleranc
 int BatteryIsOk(float temperature, float soc, float charge_rate);
 void test_battery(float temperature, float soc, float charge_rate, int language);
 
-#endif
+#endif // BMS_MAIN_H
