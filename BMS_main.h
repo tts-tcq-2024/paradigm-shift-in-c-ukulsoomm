@@ -20,7 +20,7 @@ int is_OutOfRange(float value, float min_value, float max_value);
 int is_NearLowerLimit(float value, float min_value, float tolerance);
 int is_NearUpperLimit(float value, float max_value, float tolerance);
 int ParameterCheck(float value, float min_value, float max_value, float tolerance, enum ParameterType parameter_type);
-int battery_is_ok(float temperature, float soc, float charge_rate);
+int BatteryIsOk(float temperature, float soc, float charge_rate);
 void test_battery(float temperature, float soc, float charge_rate, int language);
 
 #endif
