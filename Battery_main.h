@@ -10,7 +10,7 @@ enum ParameterType {
 #define ENGLISH 0
 #define GERMAN 1
 
-extern int current_language;
+extern int Current_Language;
 extern const char* messages[][3][3];
 
 // Function prototypes
